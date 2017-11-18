@@ -21,3 +21,4 @@ fi
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export RANGER_LOAD_DEFAULT_RC=TRUE

@@ -21,3 +21,5 @@ URxvt.internalBorder:           25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:             firefox
 URxvt.matcher.button: 		1
+
+rofi.font: Overpass 16

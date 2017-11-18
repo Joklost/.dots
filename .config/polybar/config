@@ -27,6 +27,9 @@ bottom = true
 width = 100%
 height = 27
 
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
 background = ${bar/top.background}
 foreground = ${bar/top.foreground}
 
@@ -320,11 +323,11 @@ menu-1-0-foreground = #fba922
 menu-1-0-exec = menu_open-0
 menu-1-1 = Reboot
 menu-1-1-foreground = #fba922
-menu-1-1-exec = sudo reboot
+menu-1-1-exec = reboot
 
 menu-2-0 = Power off
 menu-2-0-foreground = #fba922
-menu-2-0-exec = sudo poweroff
+menu-2-0-exec = shutdown now
 menu-2-1 = Cancel
 menu-2-1-foreground = #fba922
 menu-2-1-exec = menu_open-0
@@ -333,5 +336,36 @@ menu-2-1-exec = menu_open-0
 type = internal/date
 interval = 2
 date = %%{F#999}%Y-%m-%d%%{F-}  %%{F#fff}%H:%M%%{F-}
+
+[module/i3]
+type = internal/i3
+
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+enable-click = true
+enable-scroll = true
+wrapping-scroll = true
+fuzzy-match = true
+
+format = <label-state> <label-mode>
+
+label-focused = %index%
+label-focused-foreground = #cc6666
+label-focused-background = #1d1f21
+label-focused-underline = #fba922
+label-focused-padding = 1
+
+label-unfocused = %index%
+label-unfocused-padding = 1
+
+label-visible = %index%
+label-visible-underline = #555555
+label-visible-padding = 1
+
+label-urgent = %index%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 1
 
 ; vim:ft=dosini

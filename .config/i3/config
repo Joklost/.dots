@@ -75,7 +75,7 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+# bindsym $mod+0 workspace 10
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -87,7 +87,7 @@ bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+# bindsym $mod+Shift+0 move container to workspace 10
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
@@ -158,6 +158,10 @@ exec_always --no-startup-id wal -R
 
 # Execute polybar on launch. Script kills current ones on i3 refresh, otherwise they duplicate
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# i3lock
+bindsym $mod+0 exec i3lock -i /home/joklost/images/wallpaper1.png -e
+bindsym $mod+Shift+0 exec i3lock -i /home/joklost/images/wallpaper1.png -e && systemctl hibernate
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10

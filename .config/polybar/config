@@ -18,7 +18,7 @@ font-1 = MaterialIcons:size=20;0
 font-2 = Termsynu:size=16:antialias=false;-2
 font-3 = FontAwesome:size=18;0
 
-modules-left = powermenu mpd
+modules-left = mpd
 modules-right = volume backlight wireless-network battery date
 
 [bar/bottom]

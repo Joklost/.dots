@@ -1,0 +1,13 @@
+{
+    "plugins": [
+        "neovimhaskell/haskell-vim"
+    ],
+    "cmds": [
+        "nmap <up> :NERDTreeToggle<cr>",
+        "nnoremap gV `[v`]"
+    ],
+    "vimfiles": [
+        "~/.vim/custom.vim"
+    ]
+}
+

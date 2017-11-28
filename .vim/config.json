@@ -1,6 +1,5 @@
 {
     "plugins": [
-        "neovimhaskell/haskell-vim"
     ],
     "cmds": [
         "nmap <up> :NERDTreeToggle<cr>",
@@ -8,6 +7,13 @@
     ],
     "vimfiles": [
         "~/.vim/custom.vim"
+    ],
+    "_comments": [
+        "let g:deoplete#enable_at_startup = 1",
+        "Shougo/deoplete.nvim",
+        "roxma/nvim-yarp",
+        "roxma/vim-hug-neovim-rpc",
+        "zchee/deoplete-jedi"
     ]
 }
 
